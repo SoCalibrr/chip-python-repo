@@ -1,1 +1,3 @@
 This...right here...is a test. Ya'hear?
+
+I'm writing this from my terminal. How cool is that? Now lets commit!
