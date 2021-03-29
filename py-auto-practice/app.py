@@ -224,5 +224,17 @@
 
 
 # # Lists
-names = ['John', 'Bob', 'Mosh', 'Sarah', 'Mary']
-print(names[2:])
+# names = ['John', 'Bob', 'Mosh', 'Sarah', 'Mary']
+# print(names[2:])
+
+
+matrix = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+]
+
+# print(matrix[0][1:])
+for row in matrix:      # Selects the first row, or list, in the matrix
+    for item in row:    # For each value in the list
+        print(item ** 2)
