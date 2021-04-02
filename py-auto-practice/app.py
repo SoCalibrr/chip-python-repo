@@ -228,13 +228,97 @@
 # print(names[2:])
 
 
-matrix = [
-    [1, 2, 3],
-    [4, 5, 6],
-    [7, 8, 9]
-]
+# matrix = [
+#     [1, 2, 3],
+#     [4, 5, 6],
+#     [7, 8, 9]
+# ]
 
-# print(matrix[0][1:])
-for row in matrix:      # Selects the first row, or list, in the matrix
-    for item in row:    # For each value in the list
-        print(item ** 2)
+# # print(matrix[0][1:])
+# for row in matrix:      # Selects the first row, or list, in the matrix
+#     for item in row:    # For each value in the list
+#         print(item ** 2)
+
+
+
+# # List Methods/Functions
+# numbers = [5, 2, 1, 7, 4]
+# numbers.append(20)      # append 20 to the end of the list
+# print(numbers)
+# numbers.insert(2, 10)   # insert 10 at the 2nd index of list
+# print(numbers)
+# numbers.remove(5)       # Removes specific objects/value from list
+# print(numbers)
+# numbers.clear()         # Removes all items from list
+# print(numbers)
+# numbers = [5, 2, 1, 7, 4]
+# numbers.pop()           # Removes last item from a list
+# print(numbers)
+# print(numbers.index(5)) # Check for the 1st existence of an item in list
+
+# print(2 in numbers)     # Check for the existence of charachers 
+# print(50 in numbers)    # or a sequence of characters in a list.
+# print(numbers.count(5)) # Count the number of occurences
+# numbers.sort()          # Sorts list
+# print(numbers)
+# numbers.reverse()       # Sorts list in reverse/descending order
+# print(numbers)
+
+# numbers2 = numbers.copy()
+# numbers.append(10)
+# print(numbers)
+# print(numbers2)
+# numbers2.append(24)
+# print(numbers2)
+
+
+# chips_list = ['chip', 'josh', 'alycia', 'netta', 'alycia', 'alycia', 'chip', 'alycia']
+# uniques = []
+# for name in chips_list:
+#     if name not in uniques:
+#         uniques.append(name)
+# print(chips_list)
+# print(uniques)
+
+
+# Tuples (Immutable: Like lists that can't be changed.)
+# Defined by parenthesis (), 
+# Can only get info about a tuple, can't change it
+# You'll mainly use lists, but if you need to create a list 
+# that no one can change, use a tuple.
+numbers = (1, 2, 3)
+
+
+# Unpacking
+coordinates = [1, 2, 3]
+# coordinates[0] * ccordinates[1] * coordinates[2]
+# or 
+# x = coordinates[0]
+# y = coordinates[1]
+# z = coordinates[2]
+# Unpaacking is more efficient
+# x, y, z = coordinates
+# print(x)
+# print(y)
+# print(z)
+
+# Random script: Trying to figure out how to create a string of 10 random numbers.
+# import random
+# ten_random_numbers = random.randint(0, 10)
+# number_list = []
+# # tell_me_your_name = input("Please tell me your name: ")
+# for i in str(ten_random_numbers):
+#     if i not in number_list[:10]:
+#         number_list.append(i)
+# print(number_list)
+
+
+
+# Dictionaries
+# Can be used to store key:value pairs (defined with {})
+customer = {
+    "name": "Chipper Wilson",
+    "age": 30,
+    "is_verifed": True
+}
+print(customer["name"])
