@@ -302,23 +302,56 @@ coordinates = [1, 2, 3]
 # print(y)
 # print(z)
 
-# Random script: Trying to figure out how to create a string of 10 random numbers.
+
+# # Random script: Trying to figure out how to create a string of 10 random numbers.
+# # NOT QUITE THERE YET :()
 # import random
-# ten_random_numbers = random.randint(0, 10)
+# random_numbers = random.randint(0, 10)
 # number_list = []
 # # tell_me_your_name = input("Please tell me your name: ")
-# for i in str(ten_random_numbers):
-#     if i not in number_list[:10]:
-#         number_list.append(i)
+# for i in str(random_numbers):
+#     while len(number_list) < 10:
+#         number_list += i
+#         continue
 # print(number_list)
 
 
 
 # Dictionaries
 # Can be used to store key:value pairs (defined with {})
-customer = {
-    "name": "Chipper Wilson",
-    "age": 30,
-    "is_verifed": True
-}
-print(customer["name"])
+# customer = {
+#     "name": "Chipper Wilson",
+#     "age": 30,
+#     "is_verifed": True
+# }
+# print(customer["name"])
+# print(customer.get("birthdate", "Dec 31 1999"))
+# customer["name"] = "Alycia Casey"
+# print(customer["name"])
+
+
+# Challenge
+# phone = input("Phone: ")
+# digits = {
+#     "0": "Zero",
+#     "1": "One",
+#     "2": "Two",
+#     "3": "Three",
+#     "4": "Four",
+#     "5": "Five",
+#     "6": "Six",
+#     "7": "Seven",
+#     "8": "Eight",
+#     "9": "Nine"
+# }
+# output = ""
+# for num in phone:
+#     output += digits.get(num, "! ") + " "   # print the value of the provided key. 
+#                                             # Print "!" if the key/vlaue is unknown.
+# print(output)
+
+
+# Emoji Converter
+message = input("> ")
+words = message.split(' ')      # Anywhere in string the caharacter is found will be used as boundary
+print(words)                    # to separate string into multiple words and then returns a list.
