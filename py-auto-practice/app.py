@@ -351,7 +351,35 @@ coordinates = [1, 2, 3]
 # print(output)
 
 
-# Emoji Converter
-message = input("> ")
-words = message.split(' ')      # Anywhere in string the caharacter is found will be used as boundary
-print(words)                    # to separate string into multiple words and then returns a list.
+# # Emoji Converter
+# message = input("> ")
+# # words = message.split(' ')      # Anywhere in string the space (' ') character is found will be used as boundary
+#                                 # to separate string into multiple words and then returns a list.
+# emojis = {
+#     ":)": "😀",
+#     ":(": "🙁",
+#     ";)": "😉"
+# }
+# output = ""
+# for word in words:
+#     output += emojis.get(word, word) + " "  # (item that we're seraching our "emojis" dictionary for, 
+# print(output)                               # default output if that "word" isn't found) 
+
+
+# def say_hello():
+#     print('Hi there!')
+#     print('Welcome aboard!')
+
+#     # Best practice is to put two line breaks after you define function.
+# print('Start:')
+# say_hello()
+# print('Finish:')
+
+
+def say_hello(name):
+    print(f"Hi there {name}!")
+    print("Welcome aboard!")
+    # parameter = (name)
+    # arguement = "Calvin"
+say_hello("Calvin")
+say_hello("Alycia")
