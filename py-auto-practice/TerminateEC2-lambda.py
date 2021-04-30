@@ -36,7 +36,7 @@ def lambda_handler(event, context):
 
     terminate_instances = []     
 
-    # Locate all instances that are tagged to start or stop.
+    # Locate all instances that are tagged to terminate.
     for instance in instances:
         for tag in instance.tags:
             if tag['Key'] == 'TerminationDate':
@@ -47,9 +47,9 @@ def lambda_handler(event, context):
 
     print(current_date)
     
-    # shut down all instances tagged to stop. 
+    # Terminate all instances with TerminateDate values of todays's date. 
     if len(terminate_instances) > 0:
-        # perform the shutdown
+        # perform the termination
         terminate = ec2.instances.filter(InstanceIds=terminate_instances).terminate()
         terminate   # ??? Is this enough to call the terminate() method ???
     else:
