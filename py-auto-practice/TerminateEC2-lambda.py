@@ -56,7 +56,5 @@ def lambda_handler(event, context):
         print("No instances to terminate.")
 
 
- # Delete any tags that are older than the current date too
- # How will cloud watch event format the date time. Do I need to use regex?
-    # No, right? We're not worried about time of CW event, we just need a trigger
+ # Do I need to add logic that will delete any tags that are older than the current date too?
 
