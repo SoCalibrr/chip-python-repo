@@ -376,10 +376,146 @@ coordinates = [1, 2, 3]
 # print('Finish:')
 
 
-def say_hello(name):
-    print(f"Hi there {name}!")
-    print("Welcome aboard!")
-    # parameter = (name)
-    # arguement = "Calvin"
-say_hello("Calvin")
-say_hello("Alycia")
+# # Functions
+# def say_hello(name):
+#     print(f"Hi there {name}!")
+#     print("Welcome aboard!")
+#     # parameter = (name)
+#     # arguement = "Calvin"
+# say_hello("Calvin")
+# say_hello("Alycia")
+
+
+# # Returns
+# def square(number):
+#     return number * number
+
+
+# result = square(3)
+# print(result)
+
+
+# # Putting our emoji converter inside of a function
+# def emoji_converter(message):
+#     words = message.split(' ')      
+#     emojis = {
+#         ":)": "😀",
+#         ":(": "🙁",
+#         ";)": "😉"
+#     }
+#     output = ""
+#     for word in words:
+#         output += emojis.get(word, word) + " "
+#     return output
+
+
+# message = input("> ")
+# print(emoji_converter(message))
+
+
+# # Handling Exceptions (Try/Except) 
+# # Exception = Kind of error that crashes our program
+# try:
+#     age = int(input('Age: '))
+#     income = 20000
+#     risk = income / age
+#     print(age)
+# except ZeroDivisionError:
+#     print('You cant divide a number by zero silly :)')    
+# except ValueError:
+#     print('Invalid Value')
+
+
+# Use comments to explain whys an hows, not whats
+
+
+# Classes are used to define new types
+# Simple types in Python (Numbers, strings, booleans)
+# A few Complex types in Python (Lists, Dictionaries)
+# Classes can define new types to model real concepts
+
+# class Point:     # Pascal Naming Convention (used for naming classes is diff. No underscores. Cap first letter of each word)
+#     def move(self):     # You can define your own functions and methods in your class.
+#         print("move")
+    
+#     def draw(self):
+#         print("draw")
+
+
+# # with this class, we've defined a new type
+# # with this type we can create new objects
+# # An object is an instance of a class
+# # A class defines a template for creating objects
+# # objects are the actual instances based on that blueprint
+# # to create an object:
+
+# point1 = Point()
+# point1.draw()
+# Point().draw()
+
+# class Point:   
+#     def __init__(self, x, y, z):  # This is a constructor and is used to construct, or create, an object.
+#         self.x = x
+#         self.y = y
+#         self.z = z
+
+#     def move(self):     
+#         print("move")
+    
+#     def draw(self):
+#         print("draw")
+
+
+# new_point = Point(5, 10, 20)
+# print(new_point.x)
+# print(new_point.y)
+# print(new_point.z)
+
+
+# # Project:
+# class Person:
+#     def __init__(self, name):
+#         self.name = name
+
+#     def talk(self):
+#         print(f"Hi, I am {self.name}.")
+
+# calvin = Person("Calvin")
+# # print(calvin.name)
+# calvin.talk()
+
+# alycia = Person("Alycia")
+# alycia.talk()
+
+
+# # Inheritance
+# # Before:
+# class Dog:
+#     def walk(self):
+#         print("walk")
+
+# class Cat:
+#     def walk(self):
+#         print("walk")
+
+# # After:
+# class Mammal:
+#     def walk(self):
+#         print("walk")
+
+
+# class Dog(Mammal):  # The Dog class will inheriate all of the methods defined in the Mammal class.
+#     pass            # Pass = there's nothing to see here. This class doesn't have any new info.
+
+
+# class Cat:
+#     pass
+
+
+# dog1 = Dog()
+# dog1.walk()
+
+
+import time
+
+print(time)
