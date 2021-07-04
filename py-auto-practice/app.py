@@ -515,7 +515,3 @@ coordinates = [1, 2, 3]
 # dog1 = Dog()
 # dog1.walk()
 
-
-import time
-
-print(time)

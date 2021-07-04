@@ -1,0 +1,33 @@
+# print("I like to eat:\n\tHamburgers\n\tHot Dogs\n\tFries")
+# # \n = new line
+# # \t = tab
+
+# message = "Maybe I'm Just Thinkin' Too Much" 
+# print(message.lower())
+# print(message.upper())
+# print(message.title())
+
+# spacing = " Hello there!"
+# spacing2 = "Hello there! "
+# spacing3 = " Hello there! "
+
+# print(spacing.lstrip())
+# print(spacing2.rstrip())
+# print(spacing.strip())
+# print(spacing2.strip())
+# print(spacing3.strip())
+
+# # TIY, pg 25
+# persons_name = "Calvin"
+# print(f'Hello {persons_name}, would  you like to like to learn some python today?')
+
+# print(persons_name)
+# print(persons_name.upper())
+# print(persons_name.lower())
+# print(persons_name.title())
+
+# print('Two Chainz always said, "Man, I love them scrippas."')
+
+# famous_person = "Two Chainz"
+# message = f'{famous_person} always said, "Man, I love them scrippas."'
+# print(message)
