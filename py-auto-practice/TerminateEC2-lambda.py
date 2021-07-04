@@ -20,7 +20,7 @@ ec2 = boto3.resource('ec2')
 
 def lambda_handler(event, context):
     
-    # Get current time in format H:M
+    # Get current time in format YYYY-MM-DD
     current_date = datetime.date.today().isoformat()
     
     # Find all the instances that are tagged with TerminationDate: {Today's Date}
@@ -42,19 +42,14 @@ def lambda_handler(event, context):
             if tag['Key'] == 'TerminationDate':
                 if tag['Value'] == current_date:
                     terminate_instances.append(instance.id)
-                    pass
-                pass
 
-    print(current_date)
+    print(f"Searching for instances with a TerminationDate tag value of: {current_date}.")
     
     # Terminate all instances with TerminateDate values of todays's date. 
     if len(terminate_instances) > 0:
         # perform the termination
         terminate = ec2.instances.filter(InstanceIds=terminate_instances).terminate()
-        terminate   # ??? Is this enough to call the terminate() method ???
+        terminate   
+        print(f"The following instances were found and have been terminated: {terminate_instances}.")
     else:
         print("No instances to terminate.")
-
-
- # Do I need to add logic that will delete any tags that are older than the current date too?
-
